@@ -6,14 +6,15 @@
 # 1) Crear una variable que contenga un elemento del conjunto de números enteros y luego imprimir por pantalla
 
 # In[7]:
-
+a=4
+print(a)
 
 
 
 # 2) Imprimir el tipo de dato de la constante 8.5
 
 # In[3]:
-
+type(8.5)
 
 
 
@@ -21,7 +22,7 @@
 # 3) Imprimir el tipo de dato de la variable creada en el punto 1
 
 # In[8]:
-
+print(type(a))
 
 
 
@@ -29,14 +30,14 @@
 # 4) Crear una variable que contenga tu nombre
 
 # In[2]:
-
+nombre= lucas heredia
 
 
 
 # 5) Crear una variable que contenga un número complejo
 
 # In[3]:
-
+num=3y
 
 
 
@@ -44,7 +45,7 @@
 # 6) Mostrar el tipo de dato de la variable crada en el punto 5
 
 # In[4]:
-
+type(num)
 
 
 
@@ -60,7 +61,8 @@ pi = 3.1416
 # 8) Crear una variable que contenga el valor 'True' y otra que contenga el valor True. ¿Se trata de lo mismo?
 
 # In[3]:
-
+var1="true"
+var2= true
 
 
 
@@ -68,7 +70,8 @@ pi = 3.1416
 # 9) Imprimir el tipo de dato correspondientes a las variables creadas en el punto 8
 
 # In[5]:
-
+print(type(var1))
+print(type(var2))
 
 
 
@@ -76,7 +79,7 @@ pi = 3.1416
 # 10) Asignar a una variable, la suma de un número entero y otro decimal
 
 # In[1]:
-
+c=5+4.2
 
 
 
@@ -85,14 +88,17 @@ pi = 3.1416
 
 # In[2]:
 
+d= 4+ 3x
+e= 6+ 5x
 
+print(d+e)
 
 
 
 # 12) Realizar una operación de suma de un número real y otro complejo
 
 # In[4]:
-
+w= -4+3j
 
 
 
@@ -100,7 +106,7 @@ pi = 3.1416
 # 13) Realizar una operación de multiplicación
 
 # In[5]:
-
+print(4*5)
 
 
 
@@ -109,22 +115,24 @@ pi = 3.1416
 
 # In[6]:
 
-
+print(2**8)
 
 
 # 15) Obtener el cociente de la división de 27 entre 4 en una variable y luego mostrarla
 
 # In[8]:
 
-
+f= 27/4
+print(f)
 
 
 
 # 16) De la división anterior solamente mostrar la parte entera
 
-# In[9]:
+# In[9]
 
-
+g= 27//4
+print(g)
 
 
 
@@ -132,7 +140,8 @@ pi = 3.1416
 
 # In[1]:
 
-
+h=27%4
+print(h)
 
 
 
@@ -140,6 +149,7 @@ pi = 3.1416
 
 # In[2]:
 
+print(g*4+h)
 
 
 
@@ -148,7 +158,7 @@ pi = 3.1416
 
 # In[3]:
 
-
+print(var1 + var2)
 
 
 
@@ -156,7 +166,7 @@ pi = 3.1416
 
 # In[4]:
 
-
+"2"==2
 
 
 
@@ -164,7 +174,7 @@ pi = 3.1416
 
 # In[11]:
 
-
+2== int("2")# convertimos el 2 de comillas en numero entero 
 
 
 
@@ -179,7 +189,9 @@ pi = 3.1416
 # 23) Crear una variable con el valor 3, y utilizar el operador '-=' para modificar su contenido y que de como resultado 2.
 
 # In[15]:
-
+a=3
+a-=1
+print(a)
 
 
 
@@ -188,7 +200,7 @@ pi = 3.1416
 
 # In[29]:
 
-
+1<<2
 
 
 
@@ -196,7 +208,7 @@ pi = 3.1416
 
 # In[23]:
 
-
+2+'2' #uno es entero y el otro string
 
 
 
@@ -205,5 +217,6 @@ pi = 3.1416
 
 # In[30]:
 
-
-
+var1= "hola mundo, "
+var2= 3
+print(var1 * var2)
