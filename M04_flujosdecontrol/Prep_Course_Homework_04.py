@@ -196,20 +196,20 @@ while (numero <= 300):
 
 # Primo = True
 
-# while True:
-#     numero_ingresado = int(input('ingresa numero, escribe 1 para terminar :   '))
-#     if numero_ingresado == 1:
-#         break
-#     try:
-#         for i in range(2,numero_ingresado):
-#             if numero_ingresado % i == 0:
-#                 primo = False
-#                 print(f'{numero_ingresado}','No es primo')
-#                 break
-#         if (primo):
-#             print(f'{numero_ingresado}', 'Es primo')
-#     except ValueError:
-#         print('Numero mayor que 2')
+while True:
+    numero_ingresado = int(input('ingresa numero, escribe 1 para terminar :   '))
+    if numero_ingresado == 1:
+        break
+    try:
+        for i in range(2,numero_ingresado):
+            if numero_ingresado % i == 0:
+                primo = False
+                print(f'{numero_ingresado}','No es primo')
+                break
+        if (primo):
+            print(f'{numero_ingresado}', 'Es primo')
+    except ValueError:
+        print('Numero mayor que 2')
     
 
 
@@ -218,11 +218,11 @@ while (numero <= 300):
 # In[75]:
 
 
-rango_max = 300
-rango_min = 100 
-
-print( 'hola ')
-for i in range(rango_min, rango_max):
-    numerodiv = i // 3 
-    print ( numerodiv)
+n = 100
+while(n<=300):
+    if n % 3 == 0 and n % 6 == 0:
+        print('El número es: ', str(n))
+        break
+    n += 1
+    
 
