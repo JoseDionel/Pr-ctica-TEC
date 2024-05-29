@@ -87,7 +87,7 @@ n = 1
 lisnumero = [0,1]
 indice = 2 
 while indice < 30:
-     lisnumero.append(lisnumero[n-1]+lisnumero[n-2])
+     lisnumero.append(lisnumero[indice-1]+lisnumero[indice-2])
      n += 1 
 print(lisnumero)
 
@@ -99,11 +99,10 @@ print(lisnumero)
 # In[24]:
 
 nuevalista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
-suma_numero = 0
+sumaden = 0
 for n in nuevalista:
-     suma_numero =+ n
-print(suma_numero)
-
+     sumaden += n
+print(sumaden)
 
 
 # 9) La proporción aurea se expresa con una proporción matemática que nace el número irracional Phi= 1,618… que los griegos llamaron número áureo. El cuál se puede aproximar con la sucesión de Fibonacci. Con la lista del ejercicio anterior, imprimir el cociente de los últimos 5 pares de dos números contiguos:<br>
@@ -116,16 +115,26 @@ print(suma_numero)
 #  
 
 # In[38]:
+nuevalista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
 
-
-
+primeros = 15
+n = primeros - 5
+while(n < primeros):
+    print(nuevalista[n]/nuevalista[n-1])
+    n += 1
 
 # 10) A partir de la variable cadena ya dada, mostrar en qué posiciones aparece la letra "n"<br>
 # cadena = 'Hola Mundo. Esto es una practica del lenguaje de programación Python'
 
 # In[39]:
 
+cadena = 'Hola Mundo'
 
+print(cadena.index('n'))
+
+for i, c in enumerate(cadena):
+    if c == 'n':
+        print(i)
 
 
 
@@ -133,17 +142,23 @@ print(suma_numero)
 
 # In[40]:
 
+Dictiona = {'Continente': ['America', 'Oceania','Europa','Asia','Africa'],
+            'Paises':['Colombia','Chile','Mexico','España','Egipto','Japon','Australia'],
+            'Ciudades':['Bogota','Santiago','Ciudad de Mexico','Sidney','Tokio','Cairo','Madrid','Cancun','Barselona']
+}
 
-
-
-
+print(Dictiona.keys())
+for k in Dictiona:
+     print(k)
 # 12) Convertir en una lista la variable "cadena" del punto 10 y luego recorrerla con un iterador 
 
 # In[41]:
 
+cadena = 'Hola Mundo'
+lista_cadena = list(cadena)
 
-
-
+for l in lista_cadena:
+     print(l)
 
 # In[45]:
 
@@ -155,7 +170,11 @@ print(suma_numero)
 
 # In[48]:
 
+la = [1,2,3,4,5,6,7,8,9,10]
+lb = ['a','b','c','d','e','f','g','h','i','j','k','g']
+t = zip(la, lb)
 
+print(list(t))
 
 
 
@@ -163,7 +182,13 @@ print(suma_numero)
 # lis = [18,21,29,32,35,42,56,60,63,71,84,90,91,100]
 
 # In[49]:
-
+lis = [18,21,29,32,35,42,56,60,63,71,84,90,91,100]
+numero_divi_7 = []
+for s in lis:
+     if s % 7 == 0:
+          numero_divi_7.append(s)
+print(numero_divi_7)
+          
 
 
 
@@ -173,12 +198,16 @@ print(suma_numero)
 
 # In[56]:
 
+lis = [[1,2,3,4],'rojo','verde',[True,False,False],['uno','dos','tres']]
 
-
+print(len(lis))
 
 # In[51]:
 
-
+elemento = 0
+for e in lis:
+     elemento +=1
+print(elemento)
 
 
 
@@ -192,5 +221,15 @@ print(suma_numero)
 
 # In[58]:
 
+lis = [[1,2,3,4],'rojo','verde',[True,False,False],['uno','dos','tres']]
+lista_convertida = []
+for e in lis:
+     if type(e) != list:
+          lis.append([e])
+print(lis)
 
 
+# %%
+
+
+# %%
