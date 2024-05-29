@@ -7,15 +7,23 @@
 
 # In[1]:
 
-
-
+num_neg = []
+numero = -15
+while (numero < 0):
+    numero += 1 
+    num_neg.append(numero)
+print(num_neg) 
 
 
 # 2) ¿Con un ciclo while sería posible recorrer la lista para imprimir sólo los números pares?
 
 # In[3]:
-
-
+lista_pares = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,19,20]
+n = 0
+while (n < len(lista_pares)):
+    if n % 2 != 0:   
+        print(lista_pares[n])
+    n += 1
 
 
 
@@ -23,7 +31,11 @@
 
 # In[4]:
 
+lista_pares = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,19,20]
 
+for i in range(len(lista_pares)):
+    if i % 2 != 0:
+        print(lista_pares[i])
 
 
 
@@ -31,6 +43,8 @@
 
 # In[7]:
 
+for i in lista_pares[:3]:
+               print(i)
 
 
 
@@ -38,16 +52,22 @@
 
 # In[9]:
 
-
+for i in enumerate(lista_pares):
+      print(i)
 
 
 # 6) Dada la siguiente lista de números enteros entre 1 y 20, crear un ciclo donde se completen los valores faltantes: lista = [1,2,5,7,8,10,13,14,15,17,20]
 
 # In[10]:
+lista = [1,2,5,7,8,10,13,14,15,17,20]
 
-
-
-
+n = 1 
+while (n <= 20):
+    if ( not (n in lista)):
+        lista.insert((n-1), n)
+    n += 1
+print(lista)
+      
 
 # In[11]:
 
@@ -64,6 +84,12 @@ n = 1
 
 # In[23]:
 
+lisnumero = [0,1]
+indice = 2 
+while indice < 30:
+     lisnumero.append(lisnumero[n-1]+lisnumero[n-2])
+     n += 1 
+print(lisnumero)
 
 
 
@@ -72,6 +98,11 @@ n = 1
 
 # In[24]:
 
+nuevalista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+suma_numero = 0
+for n in nuevalista:
+     suma_numero =+ n
+print(suma_numero)
 
 
 
