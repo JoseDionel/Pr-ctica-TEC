@@ -1,3 +1,4 @@
+
 #!/usr/bin/env python
 # coding: utf-8
 
@@ -208,3 +209,5 @@ print(factorial(-2))
 print(factorial(1.23))
 print(factorial('6'))
 
+
+# %%
